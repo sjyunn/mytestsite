@@ -1,20 +1,76 @@
 body{
-  margin:0;
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 0;
+  /* border: 15px solid red; */
+  /* box-sizing: border-box; */
 }
-a{
-  color:black;
-  text-decoration: none;
+.ex-layout{
+  width: 1200px;
+  /* border: 2px solid blue; */
+  /* height: 310px */
+}
+.menu{
+  width: 1200px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 10px solid cadetblue;
+  background-color: aliceblue;
+}
+.main .left-menu{
+  font-size: 20px;
+  float: left;
+  width: 300px;
+  box-sizing: border-box;
+  border: 10px solid khaki;
+  background-color: lightsteelblue;
+}
+.main .content{
+  float: left;
+  width: 900px;
+  box-sizing: border-box;
+  border: 10px solid mediumaquamarine;
+
+  /* height: 250px; */
+}
+.main .content .article{
+  box-sizing: border-box;
+  border: 10px solid lightseagreen;
+  padding-left: 0;
+  background-color: #faf1f1;
+}
+.main .content .article2{
+  box-sizing: border-box;
+  border: 10px solid lightseagreen;
+  padding: 30px;
+  background-color: lightskyblue;
+}
+.main .content .comment{
+  height: 200px;
+  box-sizing: border-box;
+  border: 10px solid cyan;
+  background-color: lightgoldenrodyellow;
+  padding: 50px;
 }
 h1{
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
-  border-bottom: 1px solid gray;
-  margin: 0;
+  padding-top: 10px;
+}
+h2{
+  height: 50px;
+  font-size: 35px;
   padding: 20px;
+  margin: 0;
+}
+a{
+  text-align: right;
+  color: black;
+  text-decoration: none;
 }
 ol{
-  border-right: 1px solid gray;
-  width:100px;
+  /* border-right: 1px solid gray; */
+  width:80px;
   margin:0;
-  padding: 20px;
+  padding-left: 60px;
 }
