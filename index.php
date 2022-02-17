@@ -31,19 +31,25 @@
         </div>
         <div class="content">
           <div class="article">
-            <h2>
-                <?php
-                  if(isset($_GET['id'])){
-                    echo $_GET['id'];
-                  }else{
-                    echo "Welcome";
-                  }
-                ?>
-            </h2>
-            <p class="article2">
+            <div class="title2">
+              <h2>
+                  <?php
+                    if(isset($_GET['id'])){
+                      // $string_result = file_get_contents("data/".$_GET['id']);
+                      // $string_title = fgets($string_result);
+                      // echo $string_title;
+                      echo $_GET['id'];
+                    }else{
+                      echo "Welcome";
+                    }
+                  ?>
+              </h2>
+            </div>
+            <p class="cont">
               <?php
                 if(isset($_GET['id'])){
                   echo nl2br(file_get_contents("data/".$_GET['id']));
+                  // echo nl2br($string_result);
                 }else{
                   echo "Hello, PHP";
                 }
@@ -51,9 +57,11 @@
             </p>
           </div>
           <div class="comment">
-            <?php
-              echo date('Y-m-d H:i:s');
-            ?>
+            <h2>
+              <?php
+                echo date('Y-m-d H:i:s');
+              ?>
+            </h2>
           </div>
         </div<>
       </div>
